@@ -1,0 +1,33 @@
+
+############################## configure R (R language support) ##############################
+# install R (R language support) in VSCode Extensions
+
+############################## configure R LSP Client (R LSP Client for VS Code) ##############################
+# install R LSP Client (R LSP Client for VS Code) in VSCode Extensions
+
+# install R packages
+install.packages("languageserver")
+
+############################## install radian ##############################
+# install Python/Anaconda
+
+# open Anaconda Prompt
+pip install -U radian
+
+# paste the pathway of radian.exe to Rterm.windows (C:\Users\Leroy\anaconda3\Scripts\radian.exe)
+# remove --no-save & no-restore in Rterm.Option
+
+# paste the pathway of R.exe to Lsp.Path (C:\Program Files\R\R-4.0.0\bin\R.exe)
+# (optional)
+
+############################## customize shortcut key ##############################
+# open Keyboard Shortcuts (CTRL+K CTRL+S)
+# paste the following code to keybindings.json
+{
+    "key": "alt+-",
+    "command": "type",
+    "args": {
+        "text": " <- "
+    },
+    "when": "editorTextFocus"
+}
